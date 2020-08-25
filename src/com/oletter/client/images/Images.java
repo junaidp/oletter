@@ -18,6 +18,11 @@ public interface Images extends ClientBundle {
     @ClientBundle.Source("search.png")
     ImageResource search();
 
+    @ClientBundle.Source("LoginPage.jpg")
+    ImageResource loginBackground();
+    
+    @ClientBundle.Source("user.png")
+    ImageResource user();
 
 }
 

@@ -1,0 +1,3 @@
+# Module oletter
+# RPC service class, partial path of RPC policy file
+com.oletter.client.GreetingService, 60E94AE6AC9AE8DC8989FA8B76F0EFDB.gwt.rpc
