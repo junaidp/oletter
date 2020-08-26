@@ -1,31 +1,34 @@
 package com.oletter.client.view;
 
+import com.gargoylesoftware.htmlunit.javascript.host.event.Event;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasWidgets;
-import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.oletter.client.view.header.HeaderPanel;
 import com.oletter.client.view.header.HeaderPanelImpl;
 
 import gwt.material.design.client.ui.MaterialButton;
+import gwt.material.design.client.ui.MaterialColumn;
 
 public class MainViewImpl implements MainView
 {
 
 	private HeaderPanel headerPanel;
 	private Presenter presenter;
-	private VerticalPanel centerContainer = new VerticalPanel();
-
-
+	private MaterialColumn centerContainer = new MaterialColumn();
 
 	public Widget layout()
 	{
-		VerticalPanel container = new VerticalPanel();
-		container.add(new HTML("MAIN PAGE"));
+		MaterialColumn container = new MaterialColumn();
 		MaterialButton but = new MaterialButton("Login");
 		but.addClickHandler(Event -> History.newItem("login"));
 		container.add(but);
+		MaterialButton btnPost = new MaterialButton("Post");
+		container.add(btnPost);
+		btnPost.addClickHandler(Event -> History.newItem("post"));
+//		StandardDataTableView dataTable = new StandardDataTableView();
+//		container.add(dataTable.layout());
 		return container;
 	}
 
@@ -60,7 +63,7 @@ public class MainViewImpl implements MainView
 		this.presenter = presenter;
 	}
 
-	public VerticalPanel getCenterContainer()
+	public MaterialColumn getCenterContainer()
 	{
 		return centerContainer;
 	}

@@ -51,7 +51,7 @@ public class LoginView implements View
 //		iconUser.setIconSize(IconSize.LARGE);
 //		iconUser.setIconColor(Color.BLUE);
 //		rowIcon.addStyleName("w3-display-topmiddle");
-		Image imgUser = new Image(Images.INSTANCE.user());
+		Image imgUser = new Image(Images.INSTANCE.imgLoginForm());
 		imgUser.setPixelSize(100, 70);
 		imgUser.addStyleName("w3-display-topmiddle");
 		rowIcon.add(imgUser);

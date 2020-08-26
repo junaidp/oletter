@@ -23,6 +23,9 @@ public interface Images extends ClientBundle {
     
     @ClientBundle.Source("user.png")
     ImageResource user();
+    
+    @ClientBundle.Source("ImgLoginForm.jpeg")
+    ImageResource imgLoginForm();
 
 }
 
