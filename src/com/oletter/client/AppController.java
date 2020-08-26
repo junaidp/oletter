@@ -9,12 +9,13 @@ import com.google.gwt.user.client.ui.HasWidgets;
 import com.oletter.client.event.MainEvent;
 import com.oletter.client.event.MainEventHandler;
 import com.oletter.client.presenter.PostPresenter;
-import com.oletter.client.view.Login;
 import com.oletter.client.view.MainPresenterImpl;
 import com.oletter.client.view.MainView;
 import com.oletter.client.view.MainViewImpl;
 import com.oletter.client.view.PostView;
 import com.oletter.client.view.Presenter;
+import com.oletter.client.view.header.HeaderPresenter;
+import com.oletter.client.view.header.HeaderView;
 import com.oletter.client.view.login.LoginPresenter;
 import com.oletter.client.view.login.LoginView;
 
@@ -86,6 +87,11 @@ public class AppController implements Presenter, ValueChangeHandler<String>
 				MainView mainView = new MainViewImpl();
 				mainView.setPresenter( presenter );
 				mainView.go( container );
+				
+				presenter = new HeaderPresenter( rpcService, eventBus );
+				HeaderView headerView = new HeaderView();
+				headerView.setPresenter( presenter );
+				headerView.go( headerContainer );
 
 			}
 			

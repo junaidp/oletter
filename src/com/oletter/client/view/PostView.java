@@ -1,33 +1,15 @@
 package com.oletter.client.view;
 
-import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.dom.client.Style.VerticalAlign;
-import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasWidgets;
-import com.google.gwt.user.client.ui.Image;
-import com.google.gwt.user.client.ui.PasswordTextBox;
-import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.oletter.client.view.Presenter;
 import com.oletter.client.view.View;
-import com.oletter.client.images.*;
-import com.oletter.client.view.header.HeaderPanel;
-import com.oletter.client.view.header.HeaderPanelImpl;
-
-import gwt.material.design.client.constants.Color;
-import gwt.material.design.client.constants.IconPosition;
-import gwt.material.design.client.constants.IconSize;
 import gwt.material.design.client.ui.MaterialButton;
 import gwt.material.design.client.ui.MaterialColumn;
-import gwt.material.design.client.ui.MaterialIcon;
 import gwt.material.design.client.ui.MaterialLabel;
 import gwt.material.design.client.ui.MaterialRow;
 import gwt.material.design.client.ui.MaterialTextArea;
 import gwt.material.design.client.ui.MaterialTextBox;
-import gwt.material.design.incubator.client.toggle.GroupToggleButton;
-import gwt.material.design.incubator.client.toggle.ToggleButton;
-import gwt.material.design.incubator.client.toggle.GroupToggleButton;
-import gwt.material.design.themes.orange.ThemeOrange;
 
 public class PostView implements View
 {
